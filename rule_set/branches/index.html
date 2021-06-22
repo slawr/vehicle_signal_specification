@@ -12,21 +12,21 @@
     <title>Branch Entry :: Vehicle Signal Specification</title>
 
     
-    <link href="/vehicle_signal_specification/css/nucleus.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/fontawesome-all.min.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/hybrid.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/featherlight.min.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/perfect-scrollbar.min.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/auto-complete.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/atom-one-dark-reasonable.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/theme.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/hugo-theme.css?1623573665" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/nucleus.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/fontawesome-all.min.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/hybrid.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/featherlight.min.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/perfect-scrollbar.min.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/auto-complete.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/atom-one-dark-reasonable.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/theme.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/hugo-theme.css?1624382766" rel="stylesheet">
     
-    <link href="/vehicle_signal_specification/css/theme-green.css?1623573665" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/theme-green.css?1624382766" rel="stylesheet">
     
     
 
-    <script src="/vehicle_signal_specification/js/jquery-3.3.1.min.js?1623573665"></script>
+    <script src="/vehicle_signal_specification/js/jquery-3.3.1.min.js?1624382766"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/vehicle_signal_specification/js/lunr.min.js?1623573665"></script>
-<script type="text/javascript" src="/vehicle_signal_specification/js/auto-complete.js?1623573665"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/lunr.min.js?1624382766"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/auto-complete.js?1624382766"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/genivi.github.io\/vehicle_signal_specification\/";
     
 </script>
-<script type="text/javascript" src="/vehicle_signal_specification/js/search.js?1623573665"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/search.js?1624382766"></script>
 
     
   </div>
@@ -685,22 +685,19 @@ signals.</p>
 <p>A branch entry example is given below:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML">- <span style="color:#f92672">Trunk</span>:
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">branch</span>
-  <span style="color:#f92672">aggregate</span>: <span style="color:#66d9ef">false</span>
   <span style="color:#f92672">description</span>: <span style="color:#ae81ff">All signals related to the rear trunk</span>
+  <span style="color:#f92672">aggregate</span>: <span style="color:#66d9ef">false</span>
 </code></pre></div><p>The following elements are defined:</p>
-<ul>
-<li>
 <p><strong><code>Body.Trunk</code></strong><br>
 The list element name defines the dot-notated signal name to the signal.
 Please note that all parental branches included in the name must be defined as
 well.</p>
-</li>
-<li>
 <p><strong><code>type</code></strong><br>
 The value <code>branch</code> specifies that this is a branch entry (as
 opposed to a signal entry). This is the default, in case <code>type</code> is omitted.</p>
-</li>
-<li>
+<p><strong><code>description</code></strong><br>
+A description string to be included (when applicable) in the various
+specification files generated from this branch entry.</p>
 <p><strong><code>aggregate</code></strong> <em>[optional]</em><br>
 Defines whether or not this branch is an aggregate.
 If not defined, this defaults to <code>false</code>.
@@ -708,13 +705,6 @@ An aggregate is a collection of signals that make sense to handle together in a 
 A typical example could be GNSS location, where latitude and longitude make sense to read
 and write together. This is supposed to be deployment and tool specific,
 and for that reason no branches are aggregates by default in VSS.</p>
-</li>
-<li>
-<p><strong><code>description</code></strong><br>
-A description string to be included (when applicable) in the various
-specification files generated from this branch entry.</p>
-</li>
-</ul>
 
 
 <footer class="footline">
@@ -1102,19 +1092,19 @@ specification files generated from this branch entry.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/vehicle_signal_specification/js/clipboard.min.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/perfect-scrollbar.min.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/perfect-scrollbar.jquery.min.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/jquery.sticky.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/featherlight.min.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/highlight.pack.js?1623573665"></script>
+    <script src="/vehicle_signal_specification/js/clipboard.min.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/perfect-scrollbar.min.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/perfect-scrollbar.jquery.min.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/jquery.sticky.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/featherlight.min.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/highlight.pack.js?1624382766"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/vehicle_signal_specification/js/modernizr.custom-3.6.0.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/learn.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/hugo-learn.js?1623573665"></script>
+    <script src="/vehicle_signal_specification/js/modernizr.custom-3.6.0.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/learn.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/hugo-learn.js?1624382766"></script>
     
         
-            <script src="/vehicle_signal_specification/mermaid/mermaid.js?1623573665"></script>
+            <script src="/vehicle_signal_specification/mermaid/mermaid.js?1624382766"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

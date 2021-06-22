@@ -12,21 +12,21 @@
     <title>Sensors &amp; Actuators :: Vehicle Signal Specification</title>
 
     
-    <link href="/vehicle_signal_specification/css/nucleus.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/fontawesome-all.min.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/hybrid.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/featherlight.min.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/perfect-scrollbar.min.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/auto-complete.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/atom-one-dark-reasonable.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/theme.css?1623573665" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/hugo-theme.css?1623573665" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/nucleus.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/fontawesome-all.min.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/hybrid.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/featherlight.min.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/perfect-scrollbar.min.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/auto-complete.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/atom-one-dark-reasonable.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/theme.css?1624382766" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/hugo-theme.css?1624382766" rel="stylesheet">
     
-    <link href="/vehicle_signal_specification/css/theme-green.css?1623573665" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/theme-green.css?1624382766" rel="stylesheet">
     
     
 
-    <script src="/vehicle_signal_specification/js/jquery-3.3.1.min.js?1623573665"></script>
+    <script src="/vehicle_signal_specification/js/jquery-3.3.1.min.js?1624382766"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/vehicle_signal_specification/js/lunr.min.js?1623573665"></script>
-<script type="text/javascript" src="/vehicle_signal_specification/js/auto-complete.js?1623573665"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/lunr.min.js?1624382766"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/auto-complete.js?1624382766"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/genivi.github.io\/vehicle_signal_specification\/";
     
 </script>
-<script type="text/javascript" src="/vehicle_signal_specification/js/search.js?1623573665"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/search.js?1624382766"></script>
 
     
   </div>
@@ -690,61 +690,41 @@
 entry example is given below:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML">- <span style="color:#f92672">Speed</span>:
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">sensor</span>
+  <span style="color:#f92672">description</span>: <span style="color:#ae81ff">The vehicle speed, as measured by the drivetrain.</span>
   <span style="color:#f92672">datatype</span>: <span style="color:#ae81ff">uint16</span>
   <span style="color:#f92672">unit</span>: <span style="color:#ae81ff">km/h</span>
   <span style="color:#f92672">min</span>: <span style="color:#ae81ff">0</span>
   <span style="color:#f92672">max</span>: <span style="color:#ae81ff">300</span>
-  <span style="color:#f92672">description</span>: <span style="color:#ae81ff">The vehicle speed, as measured by the drivetrain.</span>
-</code></pre></div><ul>
-<li>
-<p><strong><code>Drivetrain.Transmission.Speed</code></strong><!-- raw HTML omitted -->
+</code></pre></div><p><strong><code>Drivetrain.Transmission.Speed</code></strong><br>
 Defines the dot-notated name of the data entry. Please note that
 all parental branches included in the name must be defined as well.</p>
-</li>
-<li>
-<p><strong><code>type</code></strong><!-- raw HTML omitted -->
+<p><strong><code>type</code></strong><br>
 Defines the type of the node. This can be <code>branch</code>,
 <code>sensor</code>, <code>actuator</code>, <code>stream</code> or attribute.</p>
-</li>
-<li>
-<p><strong><code>datatype</code></strong><!-- raw HTML omitted -->
-The string value of the type specifies the scalar type of the data entry
-value. See <a href="#data-type">data type</a> chapter for a list of available types.</p>
-</li>
-<li>
-<p><strong><code>min</code> [optional]</strong><!-- raw HTML omitted -->
-The minimum value, within the interval of the given <code>type</code>, that the
-data entry can be assigned.<!-- raw HTML omitted -->
-If omitted, the minimum value will be the &ldquo;Min&rdquo; value for the given type.<!-- raw HTML omitted -->
-Cannot be specified if <code>enum</code> is specified for the same data entry.</p>
-</li>
-<li>
-<p><strong><code>max</code> [optional]</strong><!-- raw HTML omitted -->
-The maximum value, within the interval of the given <code>type</code>, that the
-data entry can be assigned.<!-- raw HTML omitted -->
-If omitted, the maximum value will be the &ldquo;Max&rdquo; value for the given type.<!-- raw HTML omitted -->
-Cannot be specified if <code>enum</code> is specified for the same data entry.</p>
-</li>
-<li>
-<p><strong><code>unit</code> [optional]</strong><!-- raw HTML omitted -->
-The unit of measurement that the data entry has. See <a href="#data-unit-type">Unit
-Type</a> chapter for a list of available unit types.<!-- raw HTML omitted --> This
-cannot be specified if <code>enum</code> is specified as the signal type.</p>
-</li>
-<li>
-<p><strong><code>description</code></strong><!-- raw HTML omitted -->
+<p><strong><code>description</code></strong><br>
 A description string to be included (when applicable) in the various
 specification files generated from this data entry.</p>
-</li>
-<li>
-<p><strong><code>sensor</code>[optional]</strong><!-- raw HTML omitted -->
+<p><strong><code>datatype</code></strong><br>
+The string value of the type specifies the scalar type of the data entry
+value. See <a href="#data-type">data type</a> chapter for a list of available types.</p>
+<p><strong><code>min</code></strong> <em>[optional]</em><br>
+The minimum value, within the interval of the given <code>type</code>, that the
+data entry can be assigned.
+If omitted, the minimum value will be the &ldquo;Min&rdquo; value for the given type.
+Cannot be specified if <code>enum</code> is specified for the same data entry.</p>
+<p><strong><code>max</code></strong> <em>[optional]</em><br>
+The maximum value, within the interval of the given <code>type</code>, that the
+data entry can be assigned.
+If omitted, the maximum value will be the &ldquo;Max&rdquo; value for the given type.
+Cannot be specified if <code>enum</code> is specified for the same data entry.</p>
+<p><strong><code>unit</code></strong> <em>[optional]</em> <br>
+The unit of measurement that the data entry has. See <a href="#data-unit-type">Unit
+Type</a> chapter for a list of available unit types. This
+cannot be specified if <code>enum</code> is specified as the signal type.</p>
+<p><strong><code>sensor</code></strong> <em>[optional]</em><br>
 The sensing appliance used to produce the data entry.</p>
-</li>
-<li>
-<p><strong><code>actuator</code>[optional]</strong><!-- raw HTML omitted -->
+<p><strong><code>actuator</code></strong> <em>[optional]</em><br>
 The actuating appliance consuming the data entry.</p>
-</li>
-</ul>
 
 
 <footer class="footline">
@@ -1136,19 +1116,19 @@ The actuating appliance consuming the data entry.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/vehicle_signal_specification/js/clipboard.min.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/perfect-scrollbar.min.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/perfect-scrollbar.jquery.min.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/jquery.sticky.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/featherlight.min.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/highlight.pack.js?1623573665"></script>
+    <script src="/vehicle_signal_specification/js/clipboard.min.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/perfect-scrollbar.min.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/perfect-scrollbar.jquery.min.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/jquery.sticky.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/featherlight.min.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/highlight.pack.js?1624382766"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/vehicle_signal_specification/js/modernizr.custom-3.6.0.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/learn.js?1623573665"></script>
-    <script src="/vehicle_signal_specification/js/hugo-learn.js?1623573665"></script>
+    <script src="/vehicle_signal_specification/js/modernizr.custom-3.6.0.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/learn.js?1624382766"></script>
+    <script src="/vehicle_signal_specification/js/hugo-learn.js?1624382766"></script>
     
         
-            <script src="/vehicle_signal_specification/mermaid/mermaid.js?1623573665"></script>
+            <script src="/vehicle_signal_specification/mermaid/mermaid.js?1624382766"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
