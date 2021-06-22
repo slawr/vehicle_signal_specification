@@ -12,21 +12,21 @@
     <title>Instances :: Vehicle Signal Specification</title>
 
     
-    <link href="/vehicle_signal_specification/css/nucleus.css?1624383392" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/fontawesome-all.min.css?1624383392" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/hybrid.css?1624383392" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/featherlight.min.css?1624383392" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/perfect-scrollbar.min.css?1624383392" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/auto-complete.css?1624383392" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/atom-one-dark-reasonable.css?1624383392" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/theme.css?1624383392" rel="stylesheet">
-    <link href="/vehicle_signal_specification/css/hugo-theme.css?1624383392" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/nucleus.css?1624384924" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/fontawesome-all.min.css?1624384924" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/hybrid.css?1624384924" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/featherlight.min.css?1624384924" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/perfect-scrollbar.min.css?1624384924" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/auto-complete.css?1624384924" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/atom-one-dark-reasonable.css?1624384924" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/theme.css?1624384924" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/hugo-theme.css?1624384924" rel="stylesheet">
     
-    <link href="/vehicle_signal_specification/css/theme-green.css?1624383392" rel="stylesheet">
+    <link href="/vehicle_signal_specification/css/theme-green.css?1624384924" rel="stylesheet">
     
     
 
-    <script src="/vehicle_signal_specification/js/jquery-3.3.1.min.js?1624383392"></script>
+    <script src="/vehicle_signal_specification/js/jquery-3.3.1.min.js?1624384924"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/vehicle_signal_specification/js/lunr.min.js?1624383392"></script>
-<script type="text/javascript" src="/vehicle_signal_specification/js/auto-complete.js?1624383392"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/lunr.min.js?1624384924"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/auto-complete.js?1624384924"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/genivi.github.io\/vehicle_signal_specification\/";
     
 </script>
-<script type="text/javascript" src="/vehicle_signal_specification/js/search.js?1624383392"></script>
+<script type="text/javascript" src="/vehicle_signal_specification/js/search.js?1624384924"></script>
 
     
   </div>
@@ -725,7 +725,7 @@ resulting into a total number of 8 instances.</li>
 <h2 id="example">Example</h2>
 <p>The example from above in the specification:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML"><span style="color:#75715e"># Cabin.vspec</span>
-- <span style="color:#f92672">Door</span>:
+<span style="color:#f92672">Door</span>:
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">branch</span>
   <span style="color:#f92672">instances</span>:
     - <span style="color:#ae81ff">Row[1,4]</span>
@@ -739,7 +739,7 @@ resulting into a total number of 8 instances.</li>
 <span style="color:#75715e">#</span>
 <span style="color:#75715e"># Definition of a single door</span>
 <span style="color:#75715e">#</span>
-- <span style="color:#f92672">IsOpen</span>:
+<span style="color:#f92672">IsOpen</span>:
   <span style="color:#f92672">datatype</span>: <span style="color:#ae81ff">boolean</span>
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">actuator</span>
   <span style="color:#f92672">description</span>: <span style="color:#ae81ff">Is door open or closed</span>
@@ -773,7 +773,7 @@ As an example, if only two rows of doors are needed, then the default VSS instan
 can be overridden by redefining the Door branch as shown in the example below.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML"><span style="color:#75715e">#Redefinition changing number of rows from 4 to 2</span>
 <span style="color:#75715e">#The redefinition must appear &#34;after&#34; the original definition</span>
-- <span style="color:#f92672">Vehicle.Cabin.Door</span>:
+<span style="color:#f92672">Vehicle.Cabin.Door</span>:
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">branch</span>
   <span style="color:#f92672">instances</span>:
     - <span style="color:#ae81ff">Row[1,2]</span>
@@ -789,25 +789,25 @@ This fits very well for a vehicle that has separate washer fluid containers for 
 and that offers heating for both windshields. But that is not the case for all vehicles,
 it is not even certain that all vehicles have two windshields. this sections gives recommendations on how
 to use VSS for a vehicle if the VSS specification does not offer an exact match of the capabilities of the vehicle.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML">- <span style="color:#f92672">Windshield</span>:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML"><span style="color:#f92672">Windshield</span>:
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">branch</span>
   <span style="color:#f92672">instances</span>: [<span style="color:#e6db74">&#34;Front&#34;</span>, <span style="color:#e6db74">&#34;Rear&#34;</span>]
   <span style="color:#f92672">description</span>: <span style="color:#ae81ff">Windshield signals</span>
 
-- <span style="color:#f92672">Windshield.Heating</span>:
+<span style="color:#f92672">Windshield.Heating</span>:
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">branch</span>
   <span style="color:#f92672">description</span>: <span style="color:#ae81ff">Windshield heater signals</span>
 
-- <span style="color:#f92672">Windshield.Heating.Status</span>:
+<span style="color:#f92672">Windshield.Heating.Status</span>:
   <span style="color:#f92672">datatype</span>: <span style="color:#ae81ff">boolean</span>
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">actuator</span>
   <span style="color:#f92672">description</span>: <span style="color:#ae81ff">Windshield heater status. 0 - off, 1 - on</span>
 
-- <span style="color:#f92672">Windshield.WasherFluid</span>:
+<span style="color:#f92672">Windshield.WasherFluid</span>:
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">branch</span>
   <span style="color:#f92672">description</span>: <span style="color:#ae81ff">Windshield washer fluid signals</span>
 
-- <span style="color:#f92672">Windshield.WasherFluid.LevelLow</span>:
+<span style="color:#f92672">Windshield.WasherFluid.LevelLow</span>:
   <span style="color:#f92672">datatype</span>: <span style="color:#ae81ff">boolean</span>
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">sensor</span>
   <span style="color:#f92672">description</span>: <span style="color:#ae81ff">Low level indication for washer fluid. True = Level Low. False = Level OK.</span>
@@ -818,7 +818,7 @@ of the following methods are recommended:</p>
 <li>Redefine the branch. If a vehicle for example does not have a rear windshield
 then append a redefinition at the end of the VSS:</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML">- <span style="color:#f92672">Vehicle.Body.Windshield</span>:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML"><span style="color:#f92672">Vehicle.Body.Windshield</span>:
   <span style="color:#f92672">type</span>: <span style="color:#ae81ff">branch</span>
   <span style="color:#f92672">instances</span>: [<span style="color:#e6db74">&#34;Front&#34;</span>]
   <span style="color:#f92672">description</span>: <span style="color:#ae81ff">Windshield signals</span>
@@ -1223,19 +1223,19 @@ to ignore <code>Vehicle.Body.Windshield.Front.Heating</code>.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/vehicle_signal_specification/js/clipboard.min.js?1624383392"></script>
-    <script src="/vehicle_signal_specification/js/perfect-scrollbar.min.js?1624383392"></script>
-    <script src="/vehicle_signal_specification/js/perfect-scrollbar.jquery.min.js?1624383392"></script>
-    <script src="/vehicle_signal_specification/js/jquery.sticky.js?1624383392"></script>
-    <script src="/vehicle_signal_specification/js/featherlight.min.js?1624383392"></script>
-    <script src="/vehicle_signal_specification/js/highlight.pack.js?1624383392"></script>
+    <script src="/vehicle_signal_specification/js/clipboard.min.js?1624384924"></script>
+    <script src="/vehicle_signal_specification/js/perfect-scrollbar.min.js?1624384924"></script>
+    <script src="/vehicle_signal_specification/js/perfect-scrollbar.jquery.min.js?1624384924"></script>
+    <script src="/vehicle_signal_specification/js/jquery.sticky.js?1624384924"></script>
+    <script src="/vehicle_signal_specification/js/featherlight.min.js?1624384924"></script>
+    <script src="/vehicle_signal_specification/js/highlight.pack.js?1624384924"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/vehicle_signal_specification/js/modernizr.custom-3.6.0.js?1624383392"></script>
-    <script src="/vehicle_signal_specification/js/learn.js?1624383392"></script>
-    <script src="/vehicle_signal_specification/js/hugo-learn.js?1624383392"></script>
+    <script src="/vehicle_signal_specification/js/modernizr.custom-3.6.0.js?1624384924"></script>
+    <script src="/vehicle_signal_specification/js/learn.js?1624384924"></script>
+    <script src="/vehicle_signal_specification/js/hugo-learn.js?1624384924"></script>
     
         
-            <script src="/vehicle_signal_specification/mermaid/mermaid.js?1624383392"></script>
+            <script src="/vehicle_signal_specification/mermaid/mermaid.js?1624384924"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
